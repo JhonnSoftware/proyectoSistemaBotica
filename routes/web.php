@@ -42,6 +42,8 @@ Route::controller(ProveedoresController::class)->group(function(){
 
 Route::controller(CategoriasController::class)->group(function(){
     Route::get('categorias', 'index')->name('categorias.index'); 
+    Route::get('categorias/registrarCategorias', 'registrarCategorias')->name('categorias.registrar');
+    Route::post('categorias', 'store')->name('categorias.store'); // Ruta para guardar el cliente
 });
 
 Route::controller(UserController::class)->group(function(){
