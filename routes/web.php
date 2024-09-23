@@ -46,6 +46,8 @@ Route::controller(CategoriasController::class)->group(function(){
 
 Route::controller(UserController::class)->group(function(){
     Route::get('users', 'index')->name('users.index');
+    Route::get('users/registrarUsers', 'registrarUsers')->name('users.registrar');
+    Route::post('users', 'store')->name('users.store');
 });
 
 Route::middleware([
