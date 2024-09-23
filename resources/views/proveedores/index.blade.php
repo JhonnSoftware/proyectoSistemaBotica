@@ -7,7 +7,7 @@
         <li class="breadcrumb-item active">Proveedores</li>
     </ol>
 
-    <a href="" class="btn btn-primary mb-2">
+    <a href="{{ route('proveedores.registrar') }}" class="btn btn-primary mb-2">
         <i class="fas fa-plus"></i> Nuevo Proveedor
     </a>
     <table class="table" id="tblProveedores">

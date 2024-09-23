@@ -37,7 +37,8 @@ Route::controller(ClienteController::class)->group(function(){
 
 Route::controller(ProveedoresController::class)->group(function(){
     Route::get('proveedores', 'index')->name('proveedores.index');
-    //Route::get('proveedores/registrarProveedores', 'registrarProveedores')->name('proveedores.registrar');
+    Route::get('proveedores/registrarProveedores', 'registrarProveedores')->name('proveedores.registrar');
+    Route::post('proveedores', 'store')->name('proveedores.store');
 });
 
 Route::controller(CategoriasController::class)->group(function(){
